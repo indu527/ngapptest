@@ -20,6 +20,7 @@
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
+/** IE9, IE10 and IE11 requires all of the following polyfills. **/
 
 /**
  * Web Animations `@angular/platform-browser/animations`
@@ -55,8 +56,10 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
+import 'core-js/es/reflect';
 import 'zone.js/dist/zone';  // Included with Angular CLI.
-
+//import 'core-js/client/shim';
+import 'intl'; 
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
